@@ -28,3 +28,18 @@
 	{\end{exercise}}
 
 
+\newenvironment{positiveInformation}[1]{%
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=#1]
+}%This section defines the beginning of the positiveInformation environment
+{
+	\end{tcolorbox}
+}
+
+
+
+\newenvironment{negativeInformation}[1]{%
+	\begin{tcolorbox}[colback=yellow!10!white,colframe=red!75!black,title=#1]
+	}%This section defines the beginning of the positiveInformation environment
+	{
+	\end{tcolorbox}
+}
