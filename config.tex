@@ -1,3 +1,28 @@
 %This is the configuration file that will include 
 %all of the special formatting for the book. 
 %Right now it just contains commments. We'll fill it in later.
+
+
+\newcounter{probno}[section]
+\renewcommand{\theprobno}{\thesection.\arabic{probno}}
+%
+% Define a problem environment with its own counter.
+\newenvironment{problem}{%
+	\renewcommand\exlabel{Problem}%
+	\renewcommand\exlabelformat{\textbf{\exlabel\ \theprobno.}}%
+	\renewcommand\exsllabelformat
+	{\noexpand\textbf{\exlabel\ \theprobno.}}%
+	\renewcommand\exrtnlabelformat{$\blacktriangleleft$}%
+	\renewcommand\exsecrunhead{Solutions to Problems}%
+	\begin{exercise}[probno]}
+	{\end{exercise}}
+
+
+% Define a example environment with no counter
+\newenvironment{example}{%
+	\renewcommand\exlabel{Example}%
+	\renewcommand\exlabelformat{\textbf{\exlabel.}}%
+	\renewcommand\exrtnlabelformat{$\square$}%
+	\SolutionsAfter
+	\begin{exercise}[0]}%
+	{\end{exercise}}
