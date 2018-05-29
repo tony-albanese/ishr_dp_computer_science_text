@@ -6,8 +6,10 @@ The \textbf{objective} of the unit should be specially formatted so that is visu
 
 
 \section{Subtopics}
-This is where the meat of the chapters lives. Each section should be a standalone section of text that makes sense. Here there should be sections for \textbf{positive information} and \textbf{negative information} that are screened separately. 
-
+This is where the meat of the chapters lives. Each section should be a standalone section of text that makes sense. 
+	\begin{positiveInformation}{Positive Information}
+		This is an environment for screening positive information. In other words, this is what the user ought to do and is for best practices.
+	\end{positiveInformation}
 There should also be exercises based on past papers which students can practice their work.
 \input{topic_0_dummy/topic_0_exercises/topic_0_exercises}
 
@@ -15,8 +17,21 @@ There should also be exercises based on past papers which students can practice 
 \section{More subtopics}
 
 The subsections continue. And they will continue. Made some more changes.
+It is also important to have an environment where students can have negative information.
+
+\begin{negativeInformation}{Worst practices}
+	It is also important to avoid the following mistakes in your code base.
+	\begin{itemize}
+		\item Null pointers
+		\item Exposing your variables
+		\item Not commenting your code.
+	\end{itemize}
+	
+\end{negativeInformation}
 
 
 \section{Past Paper Questions}
 
 Each section should end with past paper questions. These could be built into the chapter or this could be a link to online resources.
+
+\input{topic_0_dummy/topic_0_exercises/topic_0_problem_set}
