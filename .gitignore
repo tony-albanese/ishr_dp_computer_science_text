@@ -1,0 +1,6 @@
+#ignore all files starting with main but not main.tex
+main*
+!main.tex
+
+#ignore exerquiz.djs
+exerquiz.djs
