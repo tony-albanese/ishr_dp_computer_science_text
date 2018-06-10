@@ -1,8 +1,29 @@
 \chapter{System Fundamentals}
-The world is a complex place full of complex objects that interact with each other. In order to understand these objects better, we group them into systems.
+The world is a complex place full of complex objects that interact with each other. In order to understand these objects better, we group them into systems. Because this is a computer science course, we will focus our attention on computers.
+
+I think it is obvious that a "computer" is a complex machine assembled from many individual parts that must function together properly in order to work. In the following sections, we will break the computer down into a system of parts and learn how to represent those parts with a block diagram. 
+
+A block diagram is a tool that helps us to understand how all of the parts of complex system work together in a visual way. In doing so, we will only focus on the level of detail that we require for whatever purpose we have at the moment. In other words, we will abstract away the detail to make things more manageable.
+
 \section{System Design Basics}
 
-\subsection{The Components of a Computer System}
-The components of a computer system are: hardware, software, peripherals,networks, and human resources.
+\subsection*{The Components of a Computer System}
+We will begin by looking at a computer system from the most superficial and highest level. These components of a computer system are: hardware, software, peripherals,networks, and human resources.
 
-\textbf{Hardware} consists of the physical components of the computer and include things such as the CPU, hard drive, chips, etc. \textbf{Software} consists of the binary programs that run on the hardware. \textbf{Peripherals} are devices that one attaches to a computer to enhance its function. Examples include cameras, disk drives, printers, modems, etc. 
+\textbf{Hardware} consists of the physical components of the computer and include things such as the CPU, hard drive, chips, etc. \textbf{Software} consists of the binary programs that run on the hardware. \textbf{Peripherals} are devices that one attaches to a computer to enhance its function. Examples include cameras, disk drives, printers, modems, etc. Human resources consist of the human beings that interact with the computer system. 
+
+\section{Computer Architecture}
+In this section, we focus our attention on the computer hardware itself. Although the hardware is very complex and consists of thousands of parts, we will remain at a very abstract and high level and focus on the following components: 
+
+\begin{itemize}
+	\item The Central Processing Unit (CPU)
+	\item The Arithmetic Logic Unit (ALU)
+	\item The Control Unit (CU)
+	\item The registers within the CPU
+\end{itemize} 
+
+\subsection*{The Central Processing Unit}
+The CPU is the circuitry (not necessarily a single chip) that is responsible for carrying out the logical instructions, computaions, and input/output functions in a computer program. 
+
+\subsection*{The Arithmetic Logic Unit}
+The ALU is an electronic curcuit (which can be found on a chip), that is responsible for arithmetic and bitwise operations on binary numbers. 
