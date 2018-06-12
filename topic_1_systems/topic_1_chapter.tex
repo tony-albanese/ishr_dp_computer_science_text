@@ -42,8 +42,17 @@ A register is a small piece of very fast memory available to the processor to sp
 \subsection*{Primary Memory}
 When people talk of computer memory they are usually talking about primary memory. In other words, when somebody says, " My computer has 8 GB RAM" they are talking about primary memory. Primary memory is the only area of memory that can be accessed by the CPU. What is the CPU looking for? Primary memory contains either instructions or data stored in a series of binary digits (bits, 1s and 0s). This data can be accessed randomly which means that the CPU can go to any memory address it needs to either fetch data or get an instruction. It would be analogous to going to any page in a book to get the information you are looking for. You don't need to read the entire book to read page 121. That is why this type of memory is called RAM or "Random Access Memory". The catch, though, is that the information stored in RAM is volatile. In other words, everything is memory is lost when the power is removed.
 
+In contrast to RAM is ROM. ROM stands for "Read Only Memory". ROM chips contain instructions and data that is permanently written and cannot be changed. It used any time a set of permanent instructions or data is required. For example, instructions on loading the operating system at boot time are normally written on ROM chips. Also, early video games like those for the Atari, Nintendo Entertainment System, and Super Nintendo came on ROM cartridges because they were fast to load. Unfortunately, you could not save your progress so your game scores were lost when you shut off the system.
 
 \subsection*{Cache Memory}
+Imagine you have a textbook for Chemistry that is over 500 pages long. You notice that for the particular topic you are studdying, you keep referring to the same information over and over again on only a few pages. Rather than try to find that information each time, you make a bookmark for the required pages in the book so that you can quickly go to the spot that you need.
+
+When you study something else, you remove the bookmark.
+
+Cache memory operates on a similar (although not the same principle). The hardware used for cache memory is much faster at reading and writing data than normal RAM. So if the processor needs a particular instruction or piece of data, it checks the cache memory first before looking to the RAM. If the required data in the cache is not there, then it is copied from RAM to cache where the processor then accesses it. This is much faster than just using RAM. You might ask why is not all memory cache memory if it so much faster? The answer is that cache memory is much more expensive. So the compromise is to use cache memory as a go-between the RAM and processor.
+
+There are two types of cache memory. L1 cache is placed directly on the microprocessor whereas L2 is placed somewhere between the primary memory (RAM) and the microprocessor. 
+%A little snippet on L1 vs L2 might be useful.
 
 \subsection*{Machine Instruction Cycle}
 \section{Secondary Memory}
