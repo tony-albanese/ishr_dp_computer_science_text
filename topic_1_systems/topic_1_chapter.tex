@@ -45,7 +45,7 @@ When people talk of computer memory they are usually talking about primary memor
 In contrast to RAM is ROM. ROM stands for "Read Only Memory". ROM chips contain instructions and data that is permanently written and cannot be changed. It used any time a set of permanent instructions or data is required. For example, instructions on loading the operating system at boot time are normally written on ROM chips. Also, early video games like those for the Atari, Nintendo Entertainment System, and Super Nintendo came on ROM cartridges because they were fast to load. Unfortunately, you could not save your progress so your game scores were lost when you shut off the system.
 
 \subsection*{Cache Memory}
-Imagine you have a textbook for Chemistry that is over 500 pages long. You notice that for the particular topic you are studdying, you keep referring to the same information over and over again on only a few pages. Rather than try to find that information each time, you make a bookmark for the required pages in the book so that you can quickly go to the spot that you need.
+Imagine you have a textbook for Chemistry that is over 500 pages long. You notice that for the particular topic you are studying, you keep referring to the same information over and over again on only a few pages. Rather than try to find that information each time, you make a bookmark for the required pages in the book so that you can quickly go to the spot that you need.
 
 When you study something else, you remove the bookmark.
 
@@ -55,4 +55,12 @@ There are two types of cache memory. L1 cache is placed directly on the micropro
 %A little snippet on L1 vs L2 might be useful.
 
 \subsection*{Machine Instruction Cycle}
+It makes sense that the CPU has to execute instructions on a particular piece of data. But in order to keep things organized and coordianated, the process by which this occurs is orderly. The Machine Instruction Cycle encapsulates the steps that need to occur in order for the processor to execute a set of instructions.
+
+\begin{enumerate}
+	\item All of the instructions from the computer program as well as any data to be processed are located in primary memory (RAM). The first step is for the CPU to fetch the correct instruction located in memory. To do that, it sends the address of the RAM containing the instruction through the Memory Address Bus to primary memory. The instructions located at that address is copied into the data bus and sent to the Control Unit. 
+	\item The next step is for the instruction to be decoded in the control unit. This is where the CPU is made aware of any additional data that may be required to execute the instruction. If other data is needed from the primary memory, the addresses of these data are placed in the memory bus and the data located at these addresses is sent back through the data bus to the CPU.
+	\item The CPU then executes the instruction on any data (if required). If more data from primary memory is required, the addresses in memory that need to be accessed are sent to the memory address bus and the values at those addresses are returned to the CPU through the data bus.
+	\item After execution, the CPU writes the result to primary memory. To do so, it sends the address where the data is to be stored through the memory address bus and the data itself through the data bus. The CPU then checks what the next instruction is and begins the cycle again.
+\end{enumerate}
 \section{Secondary Memory}
