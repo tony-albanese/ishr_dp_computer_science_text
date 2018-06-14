@@ -55,7 +55,7 @@ There are two types of cache memory. L1 cache is placed directly on the micropro
 %A little snippet on L1 vs L2 might be useful.
 
 \subsection*{Machine Instruction Cycle}
-It makes sense that the CPU has to execute instructions on a particular piece of data. But in order to keep things organized and coordianated, the process by which this occurs is orderly. The Machine Instruction Cycle encapsulates the steps that need to occur in order for the processor to execute a set of instructions.
+It makes sense that the CPU has to execute instructions on a particular piece of data. But in order to keep things organized and coordinated, the process by which this occurs is orderly. The Machine Instruction Cycle encapsulates the steps that need to occur in order for the processor to execute a set of instructions.
 
 \begin{enumerate}
 	\item All of the instructions from the computer program as well as any data to be processed are located in primary memory (RAM). The first step is for the CPU to fetch the correct instruction located in memory. To do that, it sends the address of the RAM containing the instruction through the Memory Address Bus to primary memory. The instructions located at that address is copied into the data bus and sent to the Control Unit. 
@@ -64,3 +64,6 @@ It makes sense that the CPU has to execute instructions on a particular piece of
 	\item After execution, the CPU writes the result to primary memory. To do so, it sends the address where the data is to be stored through the memory address bus and the data itself through the data bus. The CPU then checks what the next instruction is and begins the cycle again.
 \end{enumerate}
 \section{Secondary Memory}
+Primary memory is great. Not only is it (relatively) cheap, it is also very fast. There is however, one serious drawback and that is the fact that primary memory is volatile. That means that all of the information stored in RAM is lost when the computer powers down or when power is lost.
+It is not a good idea to store data that is meant to be (relatively) permanent in volatile media. Imagine the chaos that would ensure if all of the customer and account data held by banks was stored in volatile memory. A power failure or short circuit would irreversibly wipe out account information. Recovery in such a case would be practically impossible.
+The solution, therefore, is secondary memory which is persistent. Data written in a persistent medium is preserved even when power is gone. Hard drives, tape drives, SD cards, and flash memory are all examples of secondary storage that allow data to be written, stored, and retrieved over long periods of time. (Technically, ROM is also persistent, but new data cannot be written to ROM chips.) Of course, one can argue that no data storage is truly permanent. After all, hard drives fail and disks can become damaged. But we usually think of permanent as being relative to the lifetime of the computer, the data, and the user.
