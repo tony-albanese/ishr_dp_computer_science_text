@@ -45,6 +45,13 @@ For comparison, here is the "Hello, World!" program written in high level langua
 
 \input{topic_4_intro_programming/c-plus-plus-example}
 
+One important thing to keep in mind, though, is that computers only operate with 1s and 0s. That means that computers do not execute the instructions in a computer program directly. These instructions must first be translated into machine code so they can be executed. The software responsible for translating the source code into machine code is called a compiler.
+
+A compiler is a program that reads the source code and outputs a file in machine code that can then be executed by the computer. A compiler only performs the translation once and the outputted program can be run indefinitely.
+
+Another option is to use an interpreter. Programs like BASIC use an interpreter. In such a case, the lines of source code are loaded into the interpreter and they are translated "on-the-fly" into machine code. Every time the user runs the program, the source code is interpreted and translated. For this reason, interpreted languages are not used for modern applications because of performance issues. (The translation also requires system resources.)
+
+There is a middle ground used in languages like Java which use a Virtual Machine to execute programs. When a program is written in Java, a compiler is used to translate the source code into what is called Java byte code. The Java byte code is then interpreted by the Java Virtual Machine and executed on the system. The advantage to this system is that the Java Virtual Machine is much faster at interpreting the byte code because it is already partially translated. The more important advantage is that any machine running the Java Virtual Machine can interpret the byte code properly. This allows software to be easily created for different systems such as OSX, Windows, and Linux.
 %Mention Grace Hopper and compiler.
 %Some videos on how computers were loaded would be a good idea.
 %Adding some images of punch cards and wiring would also be helpful.
