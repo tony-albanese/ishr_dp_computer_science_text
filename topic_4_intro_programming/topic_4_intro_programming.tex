@@ -3,12 +3,32 @@
 \section{Introduction to Programming}
 
 \subsection*{Fundamental Operations}
+When you look at how complex and rich today's software applications are, it is hard to believe that there are really only four basic operations that a computer performs. These four basic operations are add, compare, retrieve, and store. All of the amazing things that a computer does can be broken down into those four operations. The trick is that they are applied over and over again. 
 
-\subsection*{Operations}
+In other words, the basic functions of a computer are to store values, retrieve values, add values, and compare values. That's it. In the next section, we will look at how a more complex task can be accomplished using those four operations.
 
+\subsection*{Compound Operations}
+Lets take a look at the multiplication of two numbers as an example of a compound operation. The following listing shows how a computer might accomplish this using fundamental operations.
+
+	\begin{verbatim}
+	1. Input and store A and B, the two numbers to be multiplied.
+	2. Input and store C = 0, a counter variable.
+	3. Input and store D = 0, the result.
+	4. Add A to D. Store the value in D.
+	5. Add 1 to C. Store the value in C.
+	6. Compare C and B. If C is less, than B,repeat steps 4-5.
+	7. If C = B, output D.
+	\end{verbatim}
+	
+	Of course, the modern programmer does not have to worry about this level of detail. In modern programming languages, a lot of the details of these fundamental operations is abstracted away. In other words, a programmer usually just has to write a program like this:
+	
+	%example in C++
+	\input{topic_4_intro_programming/multiplication_c++}
+	
+	to accomplish the same thing. (This particular example is in C++). The details of how these instructions are broken down into fundamental operations are handled by the program that processes the source code.
 \subsection*{Programming Languages}
 
-In order for any computer to work, it must be programmed. Programming a computer simply means inputting instructions that the machine is to follow so that it can solve whatever problem the programmer wants it to solve. In the early days (1940s), programming a computer meant manually wiring the machine with patch cables and wires so that data and output was channeled to where it was supposed to go. As you can imagine, such a process was time-consuming, laborious, error-prone, and expensive. In fact, once the computer was programmed to solve the problem, it could only solve that one problem. The machine had to be rewired in order to solve a new problem. Yuck!
+In order for any computer to work, it must be programmed. Programming a computer simply means inputting instructions that the machine is to follow so that it can solve whatever problem the programmer wants it to solve. In the early days (1940s), programming a computer meant manually wiring the machine with patch cables and wires so that data and output was channeled to where it was supposed to go. As you can imagine, such a process was time-consuming, laborious, error-prone, and expensive. In fact, once the computer was programmed to solve the problem, it could only solve that one problem. The machine had to be rewired in order to solve a new problem.
 
 In later models, computers could be programed using a series of punched cards. A punch card contained holes that represented 1s and 0s in binary code. These holes represented either the data to be manipulated, or the wires and circuits within the computer that needed to be activated in order to process the data. The output was also written to punch cards.  This process was still laborious, but much easier than wiring the computer over again. In addition, to solve a new problem, all the user had to do was load a new set of punch cards. The more complicated the program, the more punch cards one needed. 
 
