@@ -64,7 +64,29 @@ In order to write and test programs, you need to make sure you have a compiler a
 \subsection{The Nuts and Bolts of an Object Oriented Program}
 Take a look at the following Java program. At first, such a program can look overwhelming. However, as you become more familiar with the basic building blocks of a programming language, you will start to see common elements that are repeated not only within a program but between different programs.
 	\input{topic_4_intro_programming/java_compare_strings}
+
 \subsubsection*{Variables}
+Variables are probably the single most common component of a computer program that you will encounter. In a computer program, a variable is a label for a location in memory that stores data. You do not need to worry about the memory. In practical terms, you can think of a variable as a container that holds data. Here is an example of variable named myAge that holds an integer value. The data that is stored is 40. 
+	\begin{verbatim}
+	int myAge = 40;
+	\end{verbatim} 
+All this is saying is the the label myAge is storing data of an integer type. The value of the data is 40.
+The nice thing about using variables is that you can manipulate them and access their values in a program. Look at this bit, for example:
+	\begin{verbatim}
+	int myAge = 40;
+	int brothersAge = myAge + 7;
+	print(brothersAge)
+	\end{verbatim}
+	
+In this little program, we declare a second variable called brothersAge and store the value of myAge + 7. That means the computer retrieves the value of myAge, adds 7 to it, and stores the final value into brothersAge. The value of myAge is not changed.
+
+	\begin{positiveInformation}{Assigning Values}
+	You may have notices the equals sign "=" in the preceding programs. In this context "=" does not mean "equals" as in the same as. When used with variables, "=" is called the assignment operator. What it does is it tells the computer to take whatever data is on the right side of the symbol, and assign it to the variable on the left. So:
+		\begin{verbatim}
+		x = x + 10;
+		\end{verbatim}
+		tells the computer to take the current value of x, add 10 to it, and store the new value over the old value. In algebra, such an operation is forbidden, but in computer program it is quite common.
+	\end{positiveInformation}	
 \subsubsection*{Constants}
 \subsubsection*{Operators}
 \subsubsection*{Objects}
