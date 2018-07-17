@@ -1,8 +1,43 @@
 \chapter{Option D - Object Oriented Programming}
 
 \section{Objects as a Programming Concept}
+Computers are machines that were invented to solve problems. In the early days, computers were tasked with solving mathematical problems that were too laborious or complicated for human beings to solve in a reasonable amount of time. The earliest computers weren't programmed. They were hard-wired to solve one specific problem. To solve the next problem, the computer had to be rewired by hand.  Not fun!
 
-%The nature of an object
+\subsection{Procedural Thinking}
+Even as computers developed to being programmed using languages, the way of doing it was rather the same. In other words, programmers gave the computer a set of instructions to follow one step at a time. In other words, the way of tackling the problem was procedural in nature. The programmer broke the solution down into small steps and the computer executed them faithfully until the end result was obtained.
+
+\subsection{Object Oriented Thinking}
+As computers have become more powerful, they have been used to solve ever more complex problems. The classical way of tackling a problem -- procedurally, is not adequate to efficiently carry out today's problem solving tasks. Let's look at a piece of common software as an example: a word processor.
+
+A word processor is software designed to solve a particular problem: The user prepares a piece of formatted text and prints it to a piece of paper. The user can save and edit their work as needed. Now imagine trying to program a word processor using procedural thinking.  What does the computer need to do first? Maybe a work flow like this might be imagined:
+
+\begin{itemize}
+	\item Write the procedure for drawing the text entry box on the screen.
+	\item Write the procedure for capturing user input.
+	\item Write the procedure for saving, opening, and editing data.
+	\item Write the procedure for handling text formatting parameters like font size, margins, style.
+	\item Write the procedure for handling printing.
+	\item And on and on ...
+\end{itemize}
+
+You can imagine that this is not a natural way of solving this problem. Where do you start? Trying to write this software procedurally is unnatural and very difficult to do. The resulting program would be hard to follow and understand, prone to bugs, and almost impossible to change. Imagine if the developer wanted to add another font to the list. Where would he or she write the code? 
+
+However, it is much more natural to think of a word processing software as a collection of objects that are each responsible for doing one job. For example, an object oriented approach might look like the following:
+\begin{itemize}
+	\item Design an object for holding user input
+	\item Design an object for handling the printing
+	\item Design an object to handle the formatting
+	\item Design an object to hold menu icons
+	\item Etc ...
+	\item An object to handle the interaction between the components
+\end{itemize}
+
+Because the objects in this approach are independent of each other, a developer can expand, change, and enhance one without breaking the entire program. For example, the programmer can add more formatting options to the object responsible for it and then the other objects can have access to it.
+
+In other words, the world consists of obcects that interact with each other and this way of thinking is a natural way of modeling them and solving problems.
+
+\subsection{The Nature of Objects}
+
 
 %Distinguish between objects and insantiations.
 
