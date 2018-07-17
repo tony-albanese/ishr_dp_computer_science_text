@@ -34,10 +34,22 @@ However, it is much more natural to think of a word processing software as a col
 
 Because the objects in this approach are independent of each other, a developer can expand, change, and enhance one without breaking the entire program. For example, the programmer can add more formatting options to the object responsible for it and then the other objects can have access to it.
 
-In other words, the world consists of obcects that interact with each other and this way of thinking is a natural way of modeling them and solving problems.
+In other words, the world consists of objects that interact with each other and this way of thinking is a natural way of modeling them and solving problems.
 
 \subsection{The Nature of Objects}
+In computer science, objects are abstractions of things in the real world. Objects have data and they have actions.\footnote{Actions are also called methods in computer science.} For example, the object in our word processor that is responsible for displaying the menu might have the following data:
+\begin{itemize}
+	\item Menu texts
+	\item Menu icon graphics
+\end{itemize}
 
+The menu object might also have the following actions.
+\begin{itemize}
+	\item Open a file
+	\item Save a file
+\end{itemize}
+
+The point is that objects in computer science have data and actions. It is up ot the programmer to decide which data and which methods and object requires. The nice thing is that by separating the problem into objects, the programmer can add or change data and methods as needed without disrupting the rest of the code base.
 
 %Distinguish between objects and insantiations.
 
